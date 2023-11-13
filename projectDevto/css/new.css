@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   
+    text-align: center;
+}
+
+.logo img {
+    width: 30px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    resize: vertical;
+}

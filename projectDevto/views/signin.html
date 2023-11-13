@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-body-secondary">
+        <section class="navbar fixed-top bg-light p-0 d-flex flex-row justify-content-center">
+        <div class="d-flex flex-row col col-10 justify-content-between">
+            <div class="d-flex flex-row justify-content-between">
+                <a href="./signin.html" class="d-flex align-items-center">
+                    <img style="height: 50px;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" 
+                    alt="Dev.to">
+                </a>
+                <form class="d-flex flex-row" style="width: 60vh; height: 3.5rem">
+                    <input class="form-control mx-1 my-2" type="text" placeholder="Search">
+                    <button class="btn btnPurple d-flex flex-row mx-0 my-2 text-align-center" type="button">
+                        <svg xmlns="./new.html" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>                  
+                    </button>
+                </form>
+            </div>
+            <div id="loggedBox">
+                <div id="createPostButton" type="button" class="btn btnPurple m-2 mr-0">Create Post</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                </svg>
+                <img id="avatar" class="card-img-top rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz83Epwe7ohZFXmmm11zoYs_sN7owho-M_WA&usqp=CAU" style="width: 35px;" alt="..." class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a id="logout-button" class="dropdown-item col-12"  type="button" href="/projectDevto/index.html">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+       <div class="d-flex container-fluid bg-body-secondary col col-10" style="margin-top: 80px;">
+              <div class="aside-left col-2 d-flex flex-column me-1">
+            <div class="d-flex flex-column">
+                <div class="labelbox2">
+                    <li class="listbox ps-3">
+                        <a target="_self" href="/projectDevto/views/signin.html" class="icon">🏠 Home </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/pod" class="icon">🎙️ Podcast </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/videos" class="icon">📽️ Videos </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/tags" class="icon">🏷️ Tags </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/tags" class="icon">💡 FAQ </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/dev-advertising-options" class="icon">❤️ Advertise on DEV </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/about" class="icon">🆒 About </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_blank" href="https://dev.to/contact" class="icon">📯 Contact </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/guides" class="icon">📖 Guides </a>
+                    </li>
+                    <li class="listbox ps-3">
+                        <a target="_self" href="https://dev.to/software-comparisons" class="icon">🤔 Software Comparisons </a>
+                    </li>
+                    <h2 class="labeltitle p-2">Other </h2>
+                        <li class="listbox ps-3">
+                            <a target="_self" href="https://dev.to/code-of-conduct" class="icon">👍 Code of Conduct </a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" href="https://dev.to/privacy" class="icon">🤓 Privacy Policy </a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" href="https://dev.to/terms" class="icon">👀 Terms of use </a>
+                        </li>
+                    <h2 class="labeltitle p-2"> My Tags </h2>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag" href="https://dev.to/t/webdev">#webdev</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/javascript">#javascript</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/beginners">#beginners</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/beginners">#beginners</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/devops">#devops</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/ai">#ai</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/condenewbie">#codenewbie</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag"  href="https://dev.to/t/machinelearning">#machinelearning</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self"class="tag"  href="https://dev.to/t/git">#git</a>
+                        </li>
+                        <li class="listbox ps-3">
+                            <a target="_self" class="tag" href="https://dev.to/t/chatgpt">#chatgpt</a>
+                        </li>
+                       
+                </div>
+            </div>
+        </div>
+        <div id="postsColumn" class="col-7 d-flex flex-column m-0">
+            <nav class="d-flex flex-row justify-content-start flex-wrap">
+
+                <button id="relevant" type="button" class="btn btn-light">Relevant</button>
+                <button id="latest" type="button" class="btn btn-light">Latest</button>
+                <button id="top" type="button" class="btn btn-light">Top</button>
+            </nav>
+            <div class="d-flex flex-column col col-12" id="cardColumn">
+               
+                <div id="mainCard" class="card m-1">
+                    <a href="" class="postlink"> 
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--N1kcc9Ge--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5y24ey2ysgnhr9lezqxu.png" class="card-img-top" alt="Picture on the post">
+                    </a>
+                    <div id="" class="post-Creator card-body d-flex flex-row">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" class="card-img-top rounded-circle" style="width: 35px;" alt="...">
+                        <h5 class="card-text p-2">BigsonDev</h5>
+                    </div>
+                    <div style="padding-left: 40px;">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold">🚀 10 proyectos para disparar tus habilidades de codificación</h2>
+                        </div>
+                        <div id="card-tags" class="pl-5">
+                            <a href="" class="badge text-bg-light text-decoration-none">#desarrollador web</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#javascript</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#reaccionar</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#principiantes</a>
+                        </div>
+                        <div class="d-flex flex-row p-2">
+                            <div id="reactionsCounter" class="mx-2 fs-6">❤️👍😁🤯🙌Reactions</div>
+                            <div id="allCommentCounter" class="mx-2 fs-6">💬 20 comments</div>
+                        </div>
+                        <div id="" class="post-Commennt card-body d-flex flex-row">
+                            <img src="https://randomuser.me/api/portraits/women/54.jpg" class="card-img-top rounded-circle" style="width: 40px;" alt="...">
+                            <h6 class="card-text p-2">fulanita4</h6>
+                            <p class="comment-text"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>.</p>
+                        </div>                         
+                    </div>
+                </div>
+               
+                <div id="secondaryPostcard" class="card m-1">
+                    <div id="" class="post-Creator card-body d-flex flex-row">
+                        <img src="https://randomuser.me/api/portraits/men/40.jpg" class="card-img-top rounded-circle" style="width: 35px;" alt="...">
+                        <h5 class="card-text p-2">fulanito2</h5>
+                    </div>
+                    <div style="padding-left: 40px;">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold">17 Essential Tools to Boost Your Productivity 🚀🔥</h2>
+                        </div>
+                        <div id="card-tags" class="pl-5">
+                            <a href="" class="badge text-bg-light text-decoration-none">#webdev</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#programming</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#productivity</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#beginners</a>
+                        </div>
+                        <div class="d-flex flex-row p-2">
+                            <div id="reactionsCounter" class="m-2 fs-6">❤️👍😁🤯🙌Reactions</div>
+                            <div id="allCommentCounter" class="mx-2 fs-6">💬 20 comments</div>
+                        </div>
+                        <div id="" class="post-Commennt card-body d-flex flex-row">
+                            <img src="https://randomuser.me/api/portraits/women/4.jpg" class="card-img-top rounded-circle" style="width: 40px;" alt="...">
+                            <h6 class="card-text p-2">loquita2</h6>
+                            <p class="comment-text"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>.</p>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+                <div id="normalPostcard" class="card m-1">
+                    <div id="" class="post-Creator card-body d-flex flex-row">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="card-img-top rounded-circle" style="width: 35px;" alt="...">
+                        <h5 class="card-text p-2">Pascualito </h5>
+                    </div>
+                    <div style="padding-left: 40px;">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold">React Design Patterns</h2>
+                        </div>
+                        <div id="card-tags" class="pl-5">
+                            <a href="" class="badge text-bg-light text-decoration-none">#Twebdev</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#react</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#beginners</a>
+                            <a href="" class="badge text-bg-light text-decoration-none">#tutorial</a>
+                        </div>
+                        <div class="d-flex flex-row p-2">
+                            <div id="reactionsCounter" class="m-2 fs-6">❤️👍😁🤯🙌Reactions</div>
+                            <div id="allCommentCounter" class="mx-2 fs-6">💬 20 comments</div>
+                        </div>
+                        <div id="" class="post-Commennt card-body d-flex flex-row">
+                            <img src="https://randomuser.me/api/portraits/women/41.jpg" class="card-img-top rounded-circle" style="width: 40px;" alt="...">
+                            <h6 class="card-text p-2">Petra</h6>
+                            <p class="comment-text"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/projectDevto/js/signin.js"></script>   
+</body>
+</html>

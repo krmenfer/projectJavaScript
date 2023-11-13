@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post - DEV Community</title>
+    <link rel="stylesheet" href="/projectDevto/css/new.css"> <!-- Puedes crear un archivo de estilos CSS separado -->
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img class="site-logo__img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
+        <span>Create Post</span>
+    </div>
+</header>
+    <main>
+        <form id="postForm">
+            <label for="postTitle">New post title here...</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+
+            <label for="postText">write your post content here...:</label>
+            <textarea id="postText" name="postText" rows="4" required></textarea>
+
+            <label for="imageUpload">Add a conver image </label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            \n
+            <div id="form-alert" class="alert alert-danger d-none" role="alert">
+                ***Todos los campos son obligatorios
+            </div>
+            \n
+
+            <button type="button" onclick="publicarPost()">Publicar</button>
+        </form>
+    </main>
+
+ 
+    <script src="/projectDevto/js/new.js"></script> 
+</body>
+</html>
